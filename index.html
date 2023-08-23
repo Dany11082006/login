@@ -1,0 +1,68 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+     
+
+        input[type="email"],
+        input[type="password"] {
+            width: 10%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 10%;
+            padding: 10px;
+            background-color: #4caf50;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/cabecera.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
+<body>
+    <container>
+   <form action="validar.php" method="post">
+   <h1 class="animate__animated animate__backInLeft">Sistema de login</h1>
+   <p>Usuario <input type="text" placeholder="ingrese su nombre" name="usuario"></p>
+   <p>Contraseña <input type="password" placeholder="ingrese su contraseña" name="contraseña"></p>
+   <input type="submit" value="Ingresar">
+</container>
+   </form> 
+</body>
+</html>
